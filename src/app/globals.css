@@ -2,19 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground: black;
+.root{
+  background-color: black;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: black;
-  }
-}
-
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-color: black;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
