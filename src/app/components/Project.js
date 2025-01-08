@@ -47,7 +47,7 @@ const Team = () => {
         {teamMembers.map((member) => (
           <div
             key={member.id}
-            className="bg-white bg-opacity-10 rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-all duration-300 p-6 border border-green-600 w-full max-w-[300px]"
+                      className="bg-white bg-opacity-10 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 border-2 border-green-600 w-full max-w-full sm:w-full"
           >
             <img
               src={member.image}

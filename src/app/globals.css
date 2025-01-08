@@ -3,14 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
   --foreground: black;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: black;
-    --foreground: #ededed;
   }
 }
 
@@ -30,4 +28,7 @@ body {
 
 .icon{
   font-size: 30px;
+}
+.no-scroll {
+  overflow: hidden;
 }
