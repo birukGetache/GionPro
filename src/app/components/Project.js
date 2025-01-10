@@ -47,7 +47,7 @@ const Team = ({isVisible}) => {
     }`}
     id="project"
   >
-      <h2 className="text-3xl font-semibold text-center mb-8">Our Projects</h2>
+      <h2 className="text-3xl font-semibold  text-gray-800 text-center mb-8">Our Projects</h2>
       <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {teamMembers.map((member) => (
           <div
