@@ -31,7 +31,7 @@ const PartnerCard = ({ partner }) => {
   );
 };
 
-const PartnerPage = () => {
+const PartnerPage = ({isVisible}) => {
   const partners = [
     {
       name: 'Partner 1',
@@ -57,7 +57,12 @@ const PartnerPage = () => {
   ];
 
   return (
-    <div className="min-h-screen  py-12">
+    <section
+    className={`container mx-auto px-4 py-12 service transition-opacity duration-500 ease-in-out ${
+      isVisible ? "opacity-100 animate-serviceanime" : "opacity-0"
+    }`}
+    id="partner"
+  >
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-semibold text-center text-gray-800 mb-12">
           Our Trusted Partners
@@ -68,7 +73,7 @@ const PartnerPage = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

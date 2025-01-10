@@ -44,12 +44,17 @@ const teamMembers = [
   },
 ];
 
-const Team = () => {
+const Team = ({isVisible}) => {
   const [person, setPerson] = useState(false);
   const [detailid, setDetailid] = useState({});
 
   return (
-    <div className="container mx-auto px-4 py-12 relative">
+    <section
+    className={`container mx-auto px-4 py-12 service transition-opacity duration-500 ease-in-out ${
+      isVisible ? "opacity-100 animate-serviceanime" : "opacity-0"
+    }`}
+    id="team"
+  >
       <h2 className="text-3xl font-semibold text-center mb-8">Our Team</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {teamMembers.map((member) => (
@@ -146,7 +151,7 @@ const Team = () => {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 
