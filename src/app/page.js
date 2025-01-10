@@ -46,7 +46,7 @@ export default function Home() {
         <Text />
       </div>
 
-      <div className="relative lg:mt-[calc(100vh)] sm:mt-20 md:mt-20">
+      <div className="relative sm:mt-20 md:mt-20">
         <About isVisible={visibleSections.about} />
       </div>
       <Services isVisible={visibleSections.services} />
