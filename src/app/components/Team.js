@@ -28,7 +28,7 @@ const teamMembers = [
     id: 3,
     name: 'Biruk Getachew',
     role: 'Mern stack with Ai',
-    image: '/0K1A1632.jpg',
+    image: '/156351009.jpg',
     linkedin: 'https://linkedin.com/in/Kaleb',
     twitter: 'https://twitter.com/Kaleb',
     profile: 'https://example.com/Kaleb',
